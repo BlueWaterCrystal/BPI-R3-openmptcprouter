@@ -1,6 +1,11 @@
 # BPI-R3 OpenMPTCPRouter
 
-A robust and efficient multi-path TCP (MPTCP) routing solution for the BPI-R3 platform, designed to optimize network bonding for faster and more reliable internet connections. This project provides a precompiled image and kernel modifications for use with the BPI-R3 router.
+Multi-path TCP (MPTCP) OpenMPTCProuter solution for the BPI-R3 platform, designed to optimize network bonding for faster and more reliable internet connections. This project provides a precompiled image and kernel modifications for use with the BPI-R3 router.
+
+## Warning
+These are not official OpenMPTCProuter files.  
+These are test files.  
+**Use at your own risk.**
 
 ---
 
@@ -32,12 +37,14 @@ A robust and efficient multi-path TCP (MPTCP) routing solution for the BPI-R3 pl
 
 ## How to Compile
 
-- Guide: [https://github.com/Ysurac/openmptcprouter/wiki/Create-image-for-unsupported-platform](https://github.com/Ysurac/openmptcprouter/wiki/Create-image-for-unsupported-platform)
+Follow the guide on creating an OpenMPTCProuter image for unsupported platforms: [OpenMPTCProuter Guide](https://github.com/Ysurac/openmptcprouter/wiki/Create-image-for-unsupported-platform)
 
-- **OS**: Debian 12, ideally a non-root user
-- The necessary APT packages are listed in the [`apt-requirements.txt`](./apt-requirements.txt) file.
+- **Operating System**: Debian 12, ideally with a non-root user.
+- **APT Packages**: The required packages are listed in the [`apt-requirements.txt`](./apt-requirements.txt) file.
+
+To install the APT packages, run:
 ```
-sudo dpkg --set-selections < installed_packages.txt
+sudo dpkg --set-selections < apt-requirements.txt
 sudo apt-get update
 sudo apt-get dselect-upgrade
 ```
