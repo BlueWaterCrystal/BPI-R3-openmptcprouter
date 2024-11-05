@@ -17,6 +17,7 @@ These are test files.
 ---
 
 ## How to change LAN Interface
+- Access the BPI-R3 via the UART Serial Port
 - ``uci set network.lan.device='wan' && uci set network.lan.ifname='wan' && uci commit && reboot``
 - make sure to apply changes on web-gui as well, sometimes the change doesn't save and reverts back for some reason. 
 ---
