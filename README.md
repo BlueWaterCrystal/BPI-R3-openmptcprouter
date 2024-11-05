@@ -35,8 +35,12 @@ A robust and efficient multi-path TCP (MPTCP) routing solution for the BPI-R3 pl
 - Guide: [https://github.com/Ysurac/openmptcprouter/wiki/Create-image-for-unsupported-platform](https://github.com/Ysurac/openmptcprouter/wiki/Create-image-for-unsupported-platform)
 
 - **OS**: Debian 12, ideally a non-root user
-- **APT packages**: *(List required packages here)*
-
+- The necessary APT packages are listed in the [`apt-requirements.txt`](./apt-requirements.txt) file.
+```
+sudo dpkg --set-selections < installed_packages.txt
+sudo apt-get update
+sudo apt-get dselect-upgrade
+```
 ---
 
 ## License
