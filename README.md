@@ -17,7 +17,9 @@ These are test files.
 
 - **eth1** is LAN by default, which is the first SFP port.
 - For files containing the words **'port swap'**, the LAN should be the WAN port by default, which is the first RJ45 port.
-
+## Network Interface Layout
+- eth1 (SFP) is directly connected at 2.5Gbps to MediaTek SOC
+- [ SFP2 (2.5Gbps) WAN, LAN1, LAN2, LAN3, LAN4] is switched at 2.5Gbps to eth0 on the MediaTek SOC
 ---
 
 ## How to change LAN Interface
