@@ -18,8 +18,8 @@ These are test files.
 - **eth1** is LAN by default, which is the first SFP port.
 - For files containing the words **'port swap'**, the LAN should be the WAN port by default, which is the first RJ45 port.
 ## Network Interface Layout
-- eth1 (SFP) is directly connected at 2.5Gbps to MediaTek SOC
-- [ SFP2 (2.5Gbps) WAN, LAN1, LAN2, LAN3, LAN4] is switched at 2.5Gbps to eth0 on the MediaTek SOC
+- eth1 (SFP) is directly connected to the MediaTek SOC at 2.5Gbps
+- SFP2 (2.5Gbps) WAN, LAN1, LAN2, LAN3, LAN4 is switched and trunked via eth0 at 2.5Gbps to the MediaTek SOC
 ---
 
 ## How to change LAN Interface
@@ -60,6 +60,10 @@ sudo dpkg --set-selections < apt-requirements.txt
 sudo apt-get update
 sudo apt-get dselect-upgrade
 ```
+
+- You can change the default LAN port by editing ```/target/linux/mediatek/filogic/base-files/etc/board.d/02_network```
+- By default eth1 (SFP) is LAN.
+
 ---
 
 ## License
