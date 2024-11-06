@@ -8,7 +8,11 @@ These are test files.
 **Use at your own risk.**
 
 ---
-
+## Available images and status
+- [v0.61 on Kernel 6.1 - (partially works)](https://github.com/BlueWaterCrystal/BPI-R3-openmptcprouter/blob/master/v0.61/kernel_6.1/openmptcprouter-v0.61-snapshot-master-c4bcee8a-r0%2B24843-acf40c022e-mediatek-filogic-bananapi_bpi-r3-sdcard.img.gz)
+- [v0.62 on Kernel 6.1 - (Not Tested) [Port Swap]](https://github.com/BlueWaterCrystal/BPI-R3-openmptcprouter/blob/master/v0.62/kernel_6.1/openmptcprouter-v0.62-portswap-snapshot-master-2313389e-r0%2B24843-acf40c022e-mediatek-filogic-bananapi_bpi-r3-sdcard.img.gz)
+- [v0.62 on Kernel 6.6 - (GPT Partition Error) [Port Swap]](https://github.com/BlueWaterCrystal/BPI-R3-openmptcprouter/blob/master/v0.62/kernel_6.6/openmptcprouter-v0.62-portswap-snapshot-master-2313389e-r0%2B27346-c7ba5574f5-mediatek-filogic-bananapi_bpi-r3-sdcard.img.gz)
+---
 ## Notes
 
 - **eth1** is LAN by default, which is the first SFP port.
